@@ -63,6 +63,11 @@ const Post = ({ data: { post } }: PostProps) => (
         my: 5,
         ".gatsby-resp-image-wrapper": { my: [4, 4, 5], boxShadow: shadow.join(`, `) },
         variant: `layout.content`,
+        img: { width: `100%` },
+        a: { color: `primary`,
+        '&:link': { textDecoration: "none"},
+        '&:hover': { textDecoration: "underline"},
+        }, 
       }}
     >
       <section dangerouslySetInnerHTML={{ __html: post.body }} />

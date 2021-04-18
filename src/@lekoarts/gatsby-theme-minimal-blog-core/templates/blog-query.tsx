@@ -31,7 +31,7 @@ export const query = graphql`
         date:created_at(formatString: $formatString)
         excerpt
         timeToRead:reading_time
-        description:plaintext
+        description:html
         tags {
           name
           slug
