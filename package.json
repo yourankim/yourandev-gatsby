@@ -26,7 +26,10 @@
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-sitemap": "^2.5.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
+    "gatsby-rehype-prismjs": "^2.0.0",
     "gatsby-source-ghost": "^4.2.3",
+    "gatsby-transformer-rehype": "^2.0.0",
+    "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

@@ -15,7 +15,9 @@ export const query = graphql`
       }
       description:meta_description
       canonicalUrl:canonical_url
-      body:html
+      body:childHtmlRehype {
+        html
+      }
       excerpt
       timeToRead:reading_time
 

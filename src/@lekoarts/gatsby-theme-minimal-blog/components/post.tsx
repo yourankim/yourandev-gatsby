@@ -18,7 +18,9 @@ type PostProps = {
       }[]
       description?: string
       canonicalUrl?: string
-      body: string
+      body: {
+        html: string
+      }
       excerpt: string
       timeToRead?: number
       banner?: {
@@ -62,7 +64,7 @@ const Post = ({ data: { post } }: PostProps) => (
       sx={{
         my: 5,
         ".gatsby-resp-image-wrapper": { my: [4, 4, 5], boxShadow: shadow.join(`, `) },
-        variant: `layout.content`,
+     //   variant: `layout.content`,
         img: { width: `100%` },
         a: { color: `primary`,
         '&:link': { textDecoration: "none"},
@@ -70,7 +72,7 @@ const Post = ({ data: { post } }: PostProps) => (
         }, 
       }}
     >
-      <section dangerouslySetInnerHTML={{ __html: post.body }} />
+      <section dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </section>
   </Layout>
 )
