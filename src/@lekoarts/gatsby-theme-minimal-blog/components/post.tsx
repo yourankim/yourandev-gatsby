@@ -67,12 +67,13 @@ const Post = ({ data: { post } }: PostProps) => (
      //   variant: `layout.content`,
         img: { width: `100%` },
         a: { color: `primary`,
+       
         '&:link': { textDecoration: "none"},
         '&:hover': { textDecoration: "underline"},
         }, 
       }}
     >
-      <section dangerouslySetInnerHTML={{ __html: post.body.html }} />
+      <section sx={{  '.kg-card': { fontSize: '0.9em' } }} dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </section>
   </Layout>
 )
