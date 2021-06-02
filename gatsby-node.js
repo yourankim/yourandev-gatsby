@@ -329,7 +329,7 @@ exports.createPages = async ({ actions, graphql, reporter }, themeOptions) => {
   });
 
   const pages = result.data.allPage.nodes;
-  console.table(pages);
+
   if (pages.length > 0) {
     pages.forEach((page) => {
       createPage({
