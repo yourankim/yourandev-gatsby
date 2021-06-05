@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags"
@@ -67,13 +66,35 @@ const Post = ({ data: { post } }: PostProps) => (
      //   variant: `layout.content`,
         img: { width: `100%` },
         a: { color: `primary`,
-       
+        blockquote: {
+          borderLeftColor: 'var(--theme-ui-colors-primary,#6b46c1)',
+          borderLeftStyle: 'solid',
+          borderLeftWidth: '6px',
+          marginLeft: '0px',
+          marginRight: '0px',
+          paddingLeft: '2rem'
+        },
+        'blockquote>p': {
+          fontStyle : 'italic'
+        },
         '&:link': { textDecoration: "none"},
         '&:hover': { textDecoration: "underline"},
         }, 
       }}
     >
-      <section sx={{  '.kg-card': { fontSize: '0.9em' } }} dangerouslySetInnerHTML={{ __html: post.body.html }} />
+      <section sx={{  
+        blockquote: {
+          borderLeftColor: 'var(--theme-ui-colors-primary,#6b46c1)',
+          borderLeftStyle: 'solid',
+          borderLeftWidth: '6px',
+          marginLeft: '0px',
+          marginRight: '0px',
+          paddingLeft: '2rem'
+        },
+        'blockquote>p': {
+          fontStyle : 'italic'
+        },
+        '.kg-card': { fontSize: '0.9em' } }} dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </section>
   </Layout>
 )
