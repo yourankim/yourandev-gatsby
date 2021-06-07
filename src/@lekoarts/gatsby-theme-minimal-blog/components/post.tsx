@@ -4,6 +4,7 @@ import React from "react"
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags"
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo"
+import Comments from "./comments"
 
 type PostProps = {
   data: {
@@ -96,6 +97,7 @@ const Post = ({ data: { post } }: PostProps) => (
         },
         '.kg-card': { fontSize: '0.9em' } }} dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </section>
+    <Comments/>
   </Layout>
 )
 
