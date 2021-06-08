@@ -95,6 +95,7 @@ const Post = ({ data: { post } }: PostProps) => (
         'blockquote>p': {
           fontStyle : 'italic'
         },
+        'pre[class*="language-"]': { paddingTop: '1.5em' },
         '.kg-card': { fontSize: '0.9em' } }} dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </section>
     <Comments/>
