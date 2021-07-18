@@ -65,7 +65,7 @@ const Post = ({ data: { post } }: PostProps) => (
         my: 5,
         ".gatsby-resp-image-wrapper": { my: [4, 4, 5], boxShadow: shadow.join(`, `) },
      //   variant: `layout.content`,
-        img: { width: `100%` },
+        img: { maxWidth: `100%` },
         a: { color: `primary`,
         blockquote: {
           borderLeftColor: 'var(--theme-ui-colors-primary,#6b46c1)',

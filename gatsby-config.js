@@ -6,14 +6,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Youran.dev`,
-    siteTitleAlt: `Youran.dev 김유란`,
+    siteTitle: `귀리의 코딩`,
+    siteTitleAlt: `귀리의 코딩 Oats's Coding`,
     siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://Youran.dev`,
+    siteUrl: `https://winteroats.netlify.app`,
     siteDescription: `만학도 웹개발자의 개발 모험 블로그`,
     siteLanguage: `ko`,
     siteImage: `/banner.jpg`,
-    author: `@yourankim`,
+    author: `@@winteroats`,
   },
   plugins: [
     {
@@ -52,8 +52,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
+        name: `Winteroats - @lekoarts/gatsby-theme-minimal-blog`,
+        short_name: `winteroats`,
         description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
         background_color: `#fff`,
@@ -80,8 +80,8 @@ module.exports = {
     {
       resolve: `gatsby-source-ghost`,
       options: {
-        apiUrl: `https://youran.dev`,
-        contentApiKey: `8009c1423bf3264eab06229b79`,
+        apiUrl: process.env.GHOST_API_URL,
+        contentApiKey: process.env.GHOST_CONTENT_KEY,
       },
     },
     {
