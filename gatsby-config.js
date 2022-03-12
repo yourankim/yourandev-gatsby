@@ -12,7 +12,7 @@ module.exports = {
     siteUrl: `https://winteroats.netlify.app`,
     siteDescription: `만학도 웹개발자의 개발 모험 블로그`,
     siteLanguage: `ko`,
-    siteImage: `/banner.jpg`,
+    siteImage: `/android-chrome-512x512.png`,
     author: `@@winteroats`,
   },
   plugins: [
@@ -52,9 +52,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Winteroats - @lekoarts/gatsby-theme-minimal-blog`,
+        name: `귀리의 코딩`,
         short_name: `winteroats`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: `만학도 웹개발자의 개발 모험 블로그`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
